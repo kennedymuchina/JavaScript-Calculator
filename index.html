@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Calculator</title>
+  </head>
+  <body>
+    <div class="Calculator">
+      <div class="display-area">
+        <div class="display" id="workingArea">
+
+        </div>
+        <div class="display" id="display">
+
+        </div>
+      </div>
+      <div class="keypad">
+
+          <div onclick="calc.clear()"class="key clear" id="clear">AC</div>
+          <div onclick="calc.divide(); calc.appendWA('/')" class="key divide" id="divide">/</div>
+          <div onclick="calc.multiply(); calc.appendWA('*')" class="key multiply" id="multiply">x</div>
+
+          <div onclick=calc.append('7') class="key seven" id="seven">7</div>
+          <div onclick=calc.append('8') class="key eight" id="eight">8</div>
+          <div onclick=calc.append('9') class="key nine" id="nine">9</div>
+          <div onclick="calc.subtract(); calc.appendWA('-')" class="key subtract" id="subtract">-</div>
+
+          <div onclick=calc.append('4') class="key four" id="four">4</div>
+          <div onclick=calc.append('5') class="key five" id="five">5</div>
+          <div onclick=calc.append('6') class="key six" id="six">6</div>
+          <div onclick="calc.add(); calc.appendWA('+')" class="key add" id="add">+</div>
+
+          <div onclick=calc.append('1') class="key one" id="one">1</div>
+          <div onclick=calc.append('2') class="key two" id="two">2</div>
+          <div onclick=calc.append('3') class="key three" id="three">3</div>
+          <div onclick="calc.equals()" class="key equals" id="equals">=</div>
+
+          <div onclick=calc.append('0') class="key zero" id="zero">0</div>
+          <div onclick="calc.dot()"class="key decimal" id="decimal">.</div>
+
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

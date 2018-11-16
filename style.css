@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500,700');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 100px;
+}
+.Calculator {
+  padding: 5px;
+  width: 300px;
+  border-radius: 3px;
+  background-color: #000;
+  margin: auto;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.key, .display {
+  color: #fff;
+}
+.display-area {
+  height: 70px;
+  width: 100%;
+}
+.display {
+  width: 100%;
+  height: 48%;
+  margin: auto;
+  text-align: right;
+  overflow: hidden;
+  font-family: digital, sans-serif;
+}
+
+.key {
+  cursor: pointer;
+  padding: 25px 0;
+  text-align: center;
+
+}
+
+.key:hover {
+  outline: 1px solid #fff;
+}
+
+.equals {
+  padding: 55px 0;
+  background-color: #004466;
+}
+
+.decimal {
+  grid-area: de;
+}
+.equals {
+  grid-area: eq;
+}
+.clear {
+  grid-area: cl;
+  background-color: #ac3939;
+}
+.add {
+  grid-area: ad;
+}
+.divide {
+  grid-area: di;
+}
+.subtract {
+  grid-area: su;
+}
+.multiply {
+  grid-area: mu;
+}
+.zero {
+  grid-area: ze;
+}
+.nine {
+  grid-area: ni;
+}
+.eight {
+  grid-area: ei;
+}
+.seven {
+  grid-area: se;
+}
+.six {
+  grid-area: si;
+}
+.five {
+  grid-area: fi;
+}
+.four {
+  grid-area: fo;
+}
+.three {
+  grid-area: th;
+}
+.two {
+  grid-area: tw;
+}
+.one {
+  grid-area: on;
+}
+
+.one, .two, .three, .four, .five, .six,
+.seven, .eight, .nine, .zero, .decimal {
+  background-color: #4d4d4d;
+}
+
+.add, .divide, .multiply, .subtract {
+  background-color: #666;
+}
+
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  grid-auto-rows: minmax(66px, auto);
+  grid-template-areas:
+        "cl cl di mu"
+        "se ei ni su"
+        "fo fi si ad"
+        "on tw th eq"
+        "ze ze de eq";
+}
