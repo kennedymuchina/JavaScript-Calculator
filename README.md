@@ -1,5 +1,5 @@
 # JavaScript-Calculator
 A javascript-based Calculator
 
-## Live Demo
-
+## Screenshot
+![picture](jscalc.png)
