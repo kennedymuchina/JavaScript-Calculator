@@ -2,7 +2,7 @@
 A javascript-based Calculator
 
 ## Screenshot
-![picture](jscalc.png)
+![picture](jscalc2.png)
 
 #### live version
 https://codepen.io/kennedymuchina/pen/dQRLmx?editors=1100
